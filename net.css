@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.netflix {
+  float: right;
+  color: red;
+  font-size: 1.6rem;
+  padding: 30px 30px;
+}
+.banner {
+  background-image: url(manga/42\ Anime\ Shows\ You\ Should\ Probably\ Be\ Watching\ On\ Netflix\,\ Hulu\,\ And\ Amazon\ Prime.jpg);
+  background-size: contain;
+  background-position: center center;
+  object-fit: cover;
+  height: 500px;
+  color: white;
+  padding-top: 120px;
+  padding-left: 40px;
+}
+.banner-tittle {
+  color: red;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.banner-button {
+  background: black;
+  color: aqua;
+  border: none;
+  outline: none;
+  padding: 7px;
+  border-radius: 3px;
+}
+.banner-button:hover {
+  background: white;
+  color: black;
+  transition: 0.9s;
+}
+.banner-description {
+  max-width: 490px;
+  font-size: 1.2rem;
+  color: white;
+  transform: translateY(10px);
+}
+.img-container {
+  display: flex;
+  max-width: 1440px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  transition: 9s;
+}
+.img-container::-webkit-scrollbar {
+  display: none;
+}
+
+.action-film {
+  min-height: 220px;
+  max-height: 300px;
+  line-height: 220px;
+  padding-right: 20px;
+}
+.action-film:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+h2 {
+  letter-spacing: 0.3rem;
+  margin-left: 20px;
+  padding: 7px 0px;
+  color: papayawhip;
+}
+.trendin-now {
+  min-height: 180px;
+  max-height: 180px;
+  line-height: 180px;
+  padding-right: 20px;
+}
+.trendin-now:hover {
+  transform: scale(1.3);
+  transition: 0.8s;
+}
+.mangas {
+  min-height: 180px;
+  max-height: 180px;
+  line-height: 180px;
+  padding-right: 20px;
+}
+
+.mangas:hover {
+  transform: scale(1.3);
+  transition: 0.8s;
+}
+
+@media (max-width: 768px) {
+  .banner-tittle {
+    font-size: 40px;
+  }
+  .banner-description {
+    font-size: 1.1rem;
+    max-width: 350px;
+  }
+}
+@media (max-width: 468px) {
+  .banner-tittle {
+    font-size: 35px;
+  }
+  .banner-description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .banner-description {
+    max-width: 500px;
+  }
+}
